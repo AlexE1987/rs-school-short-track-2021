@@ -11,19 +11,16 @@
  */
 function sortByHeight(arr) {
   const newArr = [];
-
   arr.filter((a, index) => {
-   if (a === -1){
-     newArr.push(index)
-   }
+    if (a === -1) {
+      newArr.push(index);
+    }
+    return newArr;
   });
-
-  const arrPlus = arr.filter(e => e !== -1).sort((a, b) => a - b);
-
+  const arrPlus = arr.filter((e) => e !== -1).sort((a, b) => a - b);
   for (let i = 0; i < newArr.length; i++) {
-    arrPlus.splice(newArr[i], 0, -1)
-  };
-
+    arrPlus.splice(newArr[i], 0, -1);
+  }
   return arrPlus;
 }
 
