@@ -22,3 +22,12 @@ function removeKFromList(/* l, k */) {
 }
 
 module.exports = removeKFromList;
+// const newArr = [];
+
+//   for (let i = 0; i < l.length; i++) {
+//     const e = l[i];
+//     if (e !== k) {
+//       newArr.push(e);
+//     }
+//   }
+//   return newArr;
